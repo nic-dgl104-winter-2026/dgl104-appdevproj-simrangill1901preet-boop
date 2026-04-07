@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTaskHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SmartTaskHub - Task Management System</h1>
+  <p>by Simran Singh</p>
+
+  <div class="add-task">
+    <input type="text" id="taskInput" placeholder="Write new task...">
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <h2>To Do</h2>
+  <ul id="todoList"></ul>
+
+  <h2>Completed</h2>
+  <ul id="doneList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
